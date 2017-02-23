@@ -32,6 +32,7 @@ I will respond to the following messages:
 // response to the user typing "help"
 slapp.message('help', ['mention', 'direct_message'], (msg) => {
   msg.say(HELP_TEXT)
+  console.log(HELP_TEXT);
 })
 
 // "Conversation" flow that tracks state - kicks off when user says hi, hello or hey
