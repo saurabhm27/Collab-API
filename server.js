@@ -24,6 +24,7 @@ I will respond to the following messages:
 \`<type-any-other-text>\` - to demonstrate a random emoticon response, some of the time :wink:.
 \`attachment\` - to see a Slack attachment message.
 `
+slapp.use(fn(msg, next))
 slapp.use((msg, next) => {
   console.log(msg)
   next()
@@ -35,7 +36,7 @@ slapp.use((msg, next) => {
 // response to the user typing "help"
 slapp.message('help', ['mention', 'direct_message'], (msg) => {
   msg.say(HELP_TEXT)
-  console.log(HELP_TEXT);
+ 
 })
 
 // "Conversation" flow that tracks state - kicks off when user says hi, hello or hey
