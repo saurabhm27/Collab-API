@@ -25,10 +25,7 @@ I will respond to the following messages:
 \`attachment\` - to see a Slack attachment message.
 `
 
-slapp.use((msg, next) => {
-  console.log(msg)
-  next()
-})
+
 //*********************************************
 // Setup different handlers for messages
 //*********************************************
