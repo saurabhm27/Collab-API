@@ -18,7 +18,7 @@ var slapp = Slapp({
 http.createServer(function (req, res) {
   console.log("hi");
   res.send("Hi");
-}).listen(443);
+}).listen(80);
 
 var HELP_TEXT = `
 I will respond to the following messages:
